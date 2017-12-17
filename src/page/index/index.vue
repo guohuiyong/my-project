@@ -93,7 +93,110 @@
 
     <footer class="footer">
       <div class="footer-nav">
-        <ul class="nav-list"></ul>
+        <ul class="nav-list">
+          <li class="list-son">
+            <a href="#">
+              <span class="list-son-icon iconfont">&#xe600;</span>
+              <div class="list-son-desc">机票</div>
+            </a>
+          </li>
+          <li class="list-son">
+            <a href="#">
+              <span class="list-son-icon iconfont">&#xe600;</span>
+              <div class="list-son-desc">酒店</div>
+            </a>
+          </li>
+          <li class="list-son">
+            <a href="#">
+              <span class="list-son-icon iconfont">&#xe600;</span>
+              <div class="list-son-desc">公寓地</div>
+            </a>
+          </li>
+          <li class="list-son">
+            <a href="#">
+              <span class="list-son-icon iconfont">&#xe600;</span>
+              <div class="list-son-desc">团购好</div>
+            </a>
+          </li>
+          <li class="list-son">
+            <a href="#">
+              <span class="list-son-icon iconfont">&#xe600;</span>
+              <div class="list-son-desc">团购好</div>
+            </a>
+          </li>
+          <li class="list-son">
+            <a href="#">
+              <span class="list-son-icon iconfont">&#xe600;</span>
+              <div class="list-son-desc">团购</div>
+            </a>
+          </li>
+          <li class="list-son">
+            <a href="#">
+              <span class="list-son-icon iconfont">&#xe600;</span>
+              <div class="list-son-desc">团购好</div>
+            </a>
+          </li>
+          <li class="list-son">
+            <a href="#">
+              <span class="list-son-icon iconfont">&#xe600;</span>
+              <div class="list-son-desc">团购</div>
+            </a>
+          </li>
+          <li class="list-son">
+            <a href="#">
+              <span class="list-son-icon iconfont">&#xe600;</span>
+              <div class="list-son-desc">团购好</div>
+            </a>
+          </li>
+          <li class="list-son">
+            <a href="#">
+              <span class="list-son-icon iconfont">&#xe600;</span>
+              <div class="list-son-desc">团购</div>
+            </a>
+          </li>
+          <li class="list-son">
+            <a href="#">
+              <span class="list-son-icon iconfont">&#xe600;</span>
+              <div class="list-son-desc">团购好</div>
+            </a>
+          </li>
+          <li class="list-son">
+            <a href="#">
+              <span class="list-son-icon iconfont">&#xe600;</span>
+              <div class="list-son-desc">团购</div>
+            </a>
+          </li>
+          <li class="tar toggle">
+            <span class="tar-icon iconfont">&#xe600;</span>
+            <div class="tar-desc">收起</div>
+          </li>
+        </ul>
+      </div>
+      <ul class="other-nav">
+        <li>
+          <a href="#">登录</a>
+        </li>
+        <li>
+          <a href="#">我的订单</a>
+        </li>
+        <li>
+          <a href="#">个人中心</a>
+        </li>
+
+        <li>
+          <a href="#">最近浏览</a>
+        </li>
+        <li>
+          <a href="#">关于我们</a>
+        </li>
+      </ul>
+      <ul class="mobile-pc">
+        <li><a href="">触屏版</a></li>
+        <li><a href="">移动版</a></li>
+      </ul>
+      <div class="copyright">
+        <span>Qunar 京ICP备05021087</span>
+        <a href="">意见反馈</a>
       </div>
     </footer>
   </div>
@@ -405,5 +508,84 @@ export default {
   }
   .bold {
     font-weight: 900;
+  }
+  .footer {
+    overflow: hidden;
+    background: #f5f5f5;
+  }
+  .nav-list {
+    width: 6rem;
+    height: 2.2rem;
+    margin: 0 auto;
+    padding: .2rem .2rem 0 .2rem;
+    position: relative;
+  }
+  .list-son {
+    float: left;
+    height: 0.62rem;
+    width: 1.3rem;
+    margin-left: .2rem;
+  }
+  .list-son-icon {
+    display: block;
+    float: left;
+    color: #9e9e9e;
+  }
+  .list-son-desc {
+    float: left;
+    font-size: 0.24rem;
+    color: #9e9e9e;
+    margin: .06rem 0 0 .1rem;
+    border-bottom: 1px solid #9e9e9e;
+  }
+  .tar {
+    position: absolute;
+    top: 2rem;
+    right: 0.6rem;
+  }
+   .tar-icon {
+    display: block;
+    float: left;
+    color: #9e9e9e;
+  }
+  .tar-desc {
+    float: left;
+    font-size: 0.24rem;
+    color: #9e9e9e;
+    margin: .06rem 0 0 .1rem;
+    border-bottom: 1px solid #9e9e9e;
+  }
+  .other-nav {
+    width: 100%;
+    height: .78rem;
+    border-bottom: 1px solid #9e9e9e;
+    line-height: .78rem;
+  }
+  .other-nav li {
+    float: left;
+    padding-left: .4rem;
+  }
+  .other-nav li a {
+    font-size: .28rem;
+  }
+  .mobile-pc {
+    padding-top: .2rem;
+    text-align: center;
+  }
+  .mobile-pc li {
+    display: inline-block;
+    margin: 0 0.3rem;
+  }
+  .mobile-pc li a {
+    font-size: .28rem;
+  }
+  .copyright {
+    padding:.2rem;
+    text-align: center;
+    font-size: .28rem;
+    color: #9e9e9e;
+  }
+  .copyright a {
+    color: #9e9e9e;
   }
 </style>

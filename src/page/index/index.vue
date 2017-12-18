@@ -5,29 +5,33 @@
     	<div class="search"><a href="#" class="search-cont"><i class="glass iconfont">&#xe63b;</i>输入城市/景点/游玩主题</a></div>
     	<div class="city">城市</div>
     </header>
-
-    <swiper :options="swiperOption">
-      <swiper-slide v-for="item in swiperInfo" :key="item.id">
-        <div class="swiper-img-con">
-          <img  class="swiper-img" :src="item.imgUrl"/>
-        </div>
-      </swiper-slide>
-      <div class="swiper-pagination"  slot="pagination"></div>  	
-    </swiper> 
-
-     <swiper :options="iconOption">
-      <swiper-slide v-for="(pageInfo, index) in pages" :key="index">
-        <div class="icon-wrapper">
-          <div v-for="item in pageInfo" :key="item.id" class="icon-item">
-            <div class="icon-img-con">
-              <img  class="icon-img" :src="item.imgUrl"/>
-            </div>
-            <div class="icon-name">{{item.name}}</div>
+    
+    <div class="swiperBox">
+      <swiper :options="swiperOption">
+        <swiper-slide v-for="item in swiperInfo" :key="item.id">
+          <div class="swiper-img-con">
+            <img  class="swiper-img" :src="item.imgUrl"/>
           </div>
-        </div>
-      </swiper-slide> 
-      <div class="icon-pagination"  slot="pagination"></div> 
-    </swiper> 
+        </swiper-slide>
+        <div class="swiper-pagination"  slot="pagination"></div>  	
+      </swiper> 
+    </div> 
+
+    <div class="iconBox">
+      <swiper :options="iconOption">
+        <swiper-slide v-for="(pageInfo, index) in pages" :key="index">
+          <div class="icon-wrapper">
+            <div v-for="item in pageInfo" :key="item.id" class="icon-item">
+              <div class="icon-img-con">
+                <img  class="icon-img" :src="item.imgUrl"/>
+              </div>
+              <div class="icon-name">{{item.name}}</div>
+            </div>
+          </div>
+        </swiper-slide> 
+        <div class="icon-pagination"  slot="pagination"></div> 
+      </swiper>
+    </div>
     
     <ul class="listen-con">
       <li class="listentrance-item border-left"><i class="localize iconfont">&#xe611;</i> 定位失败</li>
@@ -308,6 +312,11 @@ export default {
     right: 0.3rem;
     top: 0.36rem;
   }
+  .swiperBox {
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 31.25%;
+  }
   .swiper-img-con {
     overflow: hidden;
   	width: 100%;
@@ -316,6 +325,11 @@ export default {
   }
   .swiper-img {
   	width: 100%;
+  }
+  .iconBox {
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 50.4%;
   }
   .icon-wrapper {
 
